@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: antiquewhite;
+}
+
+.header {
+  height: 60px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 2px 2px #c1c1c1;
+}
+.loadingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1
+}
+.item{
+    margin-top: 50px;
+}
+h5{
+    margin:0
+}

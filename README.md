@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Welcome to the Kanopy Interview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instructions
 
-## Available Scripts
+For this interview, we want to see how you feel about working with a public API and developing a React app.
 
-In the project directory, you can run:
+We will provide a list of some public APIs, feel free to choose one that interests you most and build an interface around it (with whatever features you want). We care more about functionality than UI--it doesn't have to look pretty.
 
-### `npm start`
+You can use ANY outside resources--we want to see how you actually approach problems, not quiz you on memorization!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Step 0: Create a branch
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For example, `git checkout -b @hayden/interview`.
 
-### `npm test`
+## Step 1: Create an app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We want you to initialize a React based app of your choosing. Here are some guides on how to create a react app from scratch! Feel free to use whatever starter fits you best.
 
-### `npm run build`
+- [Create Next App](https://nextjs.org/docs/api-reference/create-next-app)
+- [Create React App](https://create-react-app.dev/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Step 2: Pick an API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+At this step we'd like you to choose an API that you'd like to work with. We'll provide a list of APIs that we think are interesting below. Feel free to choose the one that interests you most.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Public APIs
 
-### `npm run eject`
+- [Star Wars](https://swapi.dev/)
+- [Anime](https://docs.api.jikan.moe/)
+- [Cocktail DB](https://www.thecocktaildb.com/api.php)
+- [Pokemon API](https://pokeapi.co/docs/v2#resource-listspagination-section)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Step 3: Query a list
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here we want you to query some type of list of data and display it in your app. For the above APIs, we recommend looking at these specific routes:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Star Wars:
+  - `https://swapi.dev/api/people`
+  - `https://swapi.dev/api/people/:id`
+- Anime:
+  - `https://api.jikan.moe/v4/anime`
+  - `https://api.jikan.moe/v4/anime/:id`
+- Cocktail DB:
+  - `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic`
+  - `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=id`
+- Pokemon:
+  - `https://pokeapi.co/api/v2/pokemon`
+  - `https://pokeapi.co/api/v2/pokemon/:id`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Step 4: Click into the details
 
-## Learn More
+We want you to allow the ability to click into the items on the previous list. This would be any of the specific `:id` routes listed above.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Step 5: Put up a pull request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open a PR on the repo! We don't care to much about the body, we just want to document your code so we can look at in the future!
+
+THANK YOU FOR YOUR TIME!
